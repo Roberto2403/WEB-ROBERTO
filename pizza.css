@@ -5,6 +5,14 @@ h1{
     font-family: "Rubik Moonrocks", sans-serif;
 }
  .fondo{
-background-image: url(../WEB-ROBERTO/img/fondo\ pizzas.jpg)
+background-image: url(../WEB-ROBERTO/fondo\ pizza2.jpg)
     
  }
+ #navegacion{
+
+    text-align: center;
+    color: rgb(37, 125, 224);
+ }
+.nav{
+text-align: center;    
+}
