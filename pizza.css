@@ -8,11 +8,22 @@ h1{
 background-image: url(../WEB-ROBERTO/fondo\ pizza2.jpg)
     
  }
- #navegacion{
-
+ 
+#tra{
     text-align: center;
-    color: rgb(37, 125, 224);
- }
-.nav{
-text-align: center;    
+}
+#email{
+    background-color: rgba(194, 0, 0, 0.555);
+    border-color: black;
+}
+
+#contraseña{
+    background-color: rgba(194, 0, 0, 0.555);
+    border-color: black;
+}
+
+#local{
+    position: relative;
+    bottom: 400px;
+    float: right;
 }

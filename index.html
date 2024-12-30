@@ -18,20 +18,81 @@
     <div class="container-fluid p-5 bg-danger text-white text-center">
         <h1>Pizzas Roberto </h1>
     </div>
-    <div id="navegacion">
-        <div class="container mt-3">
-          <h2>Promociones</h2>
-          <p>Trabaja con  nosotros</p>
-      <ul>
-        <li>
-          <a href="#">Pincha aquí </a>
-        </li>
 
-      </ul>
+  <div id="tra">
+    <div class="container mt-3 text-white">
+      <h2>TRABAJA CON NOSOTROS</h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Más información</button>
+      <div id="demo" class="collapse text-white">
+        En Telepizza, creemos que el talento es la fuerza impulsora detrás de nuestro éxito. Estamos comprometidos con la excelencia y buscamos personas apasionadas y motivadas que quieran ser parte de nuestra misión de garantizar el mejor producto y servicio en cualquier lugar, siempre.
+      </div>
+  </div>   
+
+
+  <div class="container mt-3 text-white" >
+    <h3>Nuestro contacto</h3>
+    <p></p>
+    
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+      Adjunte aquí su CV
+    </button>
+  </div>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+
+        <div class="modal-header">
+          <h4 class="modal-title">Mande su CV a esta dirección de correo electronico</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          Roberto@pizzasjob.com
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+  
       </div>
     </div>
+  </div>
+
+  <div class="container mt-3 text-white" >
+    <h2>¿Tienes una cuenta ya creada?</h2>
+    <p>¡Inicie sesión para ofertas únicas y conseguir descuentos en tu próximo pedido!</p>
+    <form action="/action_page.php">
+      <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" maxlength="30">
+        <label for="email">Email</label>
+      </div>
+      <div class="form-floating mt-3 mb-3">
+        <input type="text" class="form-control" id="contraseña" placeholder="Enter password" name="contra" maxlength="30">
+        <label for="contraseña">Contraseña</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Iniciar Sesión </button>
+    </form>
+  </div>
+
+  <div id="local">
+    <div class="container mt-3 text-white">
+      <h3>¡NUEVO LOCAL!</h3>
       
-      
+      <a href="#" title="Apertura 24/03" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Situado en c/ San Marcos nº13">Más información</a>
+    </div>
     
+    <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+    </script>
+    
+  </div>
+
+
 </body>
 </html>
